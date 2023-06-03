@@ -1,9 +1,9 @@
 const express = require('express');
-require('./config/db');
+require('./src/config/db');
 const bodyParser = express.json;
 const cors = require('cors');
 const dotenv = require('dotenv').config();
-const router = require('./routes/participant');
+const router = require('./src/routes/participant');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
